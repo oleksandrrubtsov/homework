@@ -1,21 +1,20 @@
-def animals_say_hello(animal):
-   print(animal.say_hi())
+"""
+1. Клас для обчислення площі прямокутника:
+Створіть клас Rectangle, який має атрибути для зберігання довжини та ширини прямокутника. Використовуйте декоратор @property для повернення площі прямокутника.
+"""
+class Rectangle:
+   def __init__(self, length, width):
+      self.length = length
+      self.width = width
 
-class Animal:
-   def say_hi():
-      pass
-
-class Cat(Animal):
-   def say_hi(self):
-      return 'Meow!'
+   @property
+   def area(self):
+      return self.length * self.width 
    
-class Dog(Animal):
-   def say_hi(self):
-      return 'Woof!'
-      
-cat = Cat()
-dog = Dog()
+rectangle = Rectangle (length=5, width=3)
 
-animals_say_hello(cat)
-animals_say_hello(dog)
+print("Довжина:", rectangle.length)
+print("Ширина:", rectangle.width)
+print("Площа:", rectangle.area)
+
 
