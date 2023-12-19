@@ -46,46 +46,77 @@ assert s.get_product_info('Ramen') == ('Ramen', 290)
 
 
 class Product:
-    def __init__(self, type, name, price):
-        self.type = type
+    def __init__(self, product_type, name, price):
+        self.type = product_type
         self.name = name
         self.price = price
 
+
 class ProductStore:
     def __init__(self):
-        self.store = {}
-        self.total_earnings = 0
+        self.products = {}
+        self.income = 0
+
+    def add(self, product, amount):
+        if not isinstance(product, Product):
+            raise ValueError("Invalid product type")
+
+        if amount <= 0:
+            raise ValueError("Amount should be greater than zero")
+
         
-    
-    def add(self, product: Product, amount: int):
-        if product.name not in self.products:
-            self.products[product.name] = {
-                "product_info": product,
-                "stock": amount,
-            }
+        total_price = product.price * 1.3 * amount
+
+        if product.name in self.products:
+            self.products[product.name]['amount'] += amount
         else:
-            self.products[product.name]["stock"] += amount
+            self.products[product.name] = {'type': product.type, 'amount': amount, 'price': product.price}
 
+        self.income += total_price
 
-        
-
-    
-    def set_discount(
-        self, identifier, percent, identifier_type="name"):
-        if identifier_type == "name":
-            product.info = self.products.get(identifier)
-        if not product.info:
-            raise ValueError(f"Product with name {identifier} not found")
-        self.products[identifier]["product_info"] = DiscountedProduct()
-
-           
-       
-
+    def set_discount(self, identifier, percent, identifier_type='name'):
+        for product_name, product_info in self.products.items():
+            if identifier_type == 'name' and identifier == product_name:
+                product_info['price'] *= (1 - percent / 100)
+            elif identifier_type == 'type' and identifier == product_info['type']:
+                product_info['price'] *= (1 - percent / 100)
 
     def sell_product(self, product_name, amount):
-        
-        
-    def get_income():
-        return self.total_earnings
-    
+        if product_name not in self.products:
+            raise ValueError(f"Product {product_name} not found in the store")
+
+        if amount > self.products[product_name]['amount']:
+            raise ValueError(f"Not enough {product_name} in stock")
+
+        self.products[product_name]['amount'] -= amount
+        total_price = self.products[product_name]['price'] * amount
+        self.income += total_price
+
+    def get_income(self):
+        return self.income
+
+    def get_all_products(self):
+        return self.products
+
+    def get_product_info(self, product_name):
+        if product_name in self.products:
+            return product_name, self.products[product_name]['amount']
+        else:
+            raise ValueError(f"Product {product_name} not found in the store")
+
+
+# Example 
+p = Product('Sport', 'Football T-Shirt', 100)
+p2 = Product('Food', 'Ramen', 1.5)
+
+s = ProductStore()
+
+s.add(p, 10)
+s.add(p2, 300)
+s.sell_product('Ramen', 10)
+
+assert s.get_product_info('Ramen') == ('Ramen', 290)
+
+print(s.get_income())
+
 
