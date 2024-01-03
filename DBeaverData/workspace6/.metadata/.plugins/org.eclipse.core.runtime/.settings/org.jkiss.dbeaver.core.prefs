@@ -1,0 +1,8 @@
+dialog.default.folder=/Users/vitalyrubtsov/Downloads
+driver.selector.orderBy=score
+eclipse.preferences.version=1
+org.jkiss.dbeaver.core.confirm.exit=always
+sample.database.canceled=true
+tipOfTheDayInitializer.notFirstRun=true
+ui.auto.update.check.time=1704195671667
+ui.show.tip.of.the.day.on.startup=true

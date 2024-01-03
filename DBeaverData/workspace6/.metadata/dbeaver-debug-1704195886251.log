@@ -1,0 +1,79 @@
+2024-01-02 13:41:01.100 - DBeaver 23.3.0.202312122044 is starting
+2024-01-02 13:41:01.101 - OS: Mac OS X 11.7.10 (x86_64)
+2024-01-02 13:41:01.101 - Java version: 17.0.6 by Eclipse Adoptium (64bit)
+2024-01-02 13:41:01.101 - Install path: '/Applications/DBeaver.app/Contents/Eclipse'
+2024-01-02 13:41:01.101 - Instance path: 'file:/Users/vitalyrubtsov/Library/DBeaverData/workspace6/'
+2024-01-02 13:41:01.102 - Memory available 64Mb/1024Mb
+2024-01-02 13:41:01.112 - Create display
+2024-01-02 13:41:01.433 - Initializing DBeaver 23.3.0
+2024-01-02 13:41:01.435 - Host plugin: org.jkiss.dbeaver.ui.app.standalone 23.3.0.202312122044
+2024-01-02 13:41:01.435 - Initialize desktop platform...
+2024-01-02 13:41:01.663 - BounceCastle bundle found. Use JCE provider BC
+> Start Core File Systems [org.eclipse.core.filesystem 1.10.100.v20230717-1727]
+> Start Core Resource Management [org.eclipse.core.resources 3.19.100.v20230814-1312]
+> Start Team Support Core [org.eclipse.team.core 3.10.100.v20230726-0617]
+> Start DBeaver UI Navigator [org.jkiss.dbeaver.ui.navigator 1.0.120.202312122044]
+2024-01-02 13:41:02.190 - Initialize base platform...
+2024-01-02 13:41:02.226 - Platform initialized (791ms)
+2024-01-02 13:41:02.279 - Starting instance server at http://localhost:55568
+2024-01-02 13:41:02.290 - Run workbench
+> Start DBeaver UI [org.jkiss.dbeaver.ui 5.1.135.202312122044]
+> Start Eclipse e4 Workbench SWT [org.eclipse.e4.ui.workbench.swt 0.17.100.v20230727-0604]
+> Start Eclipse Application Services [org.eclipse.e4.core.services 2.4.100.v20230708-0809]
+> Start Eclipse UI Application Services [org.eclipse.e4.ui.services 1.6.100.v20230630-1554]
+> Start Eclipse e4 Progress View [org.eclipse.e4.ui.progress 0.4.100.v20230727-0604]
+> Start Eclipse Bindings Support [org.eclipse.e4.ui.bindings 0.14.100.v20230630-1554]
+> Start Eclipse e4 core commands [org.eclipse.e4.core.commands 1.1.100.v20230630-1554]
+> Start EMF XML/XMI Persistence [org.eclipse.emf.ecore.xmi 2.35.0.v20230801-1141]
+> Start Eclipse e4 Workbench Add-ons [org.eclipse.e4.ui.workbench.addons.swt 1.5.100.v20230727-0604]
+> Start Eclipse e4 Workbench SWT Renderer [org.eclipse.e4.ui.workbench.renderers.swt 0.16.100.v20230801-1255]
+> Start Eclipse Dependency Injection Extensions [org.eclipse.e4.core.di.extensions 0.18.0.v20230429-1914]
+> Start Eclipse CSS SWT Support [org.eclipse.e4.ui.css.swt 0.15.100.v20230727-0604]
+> Start Eclipse CSS SWT Theme Support [org.eclipse.e4.ui.css.swt.theme 0.14.100.v20230727-0604]
+2024-01-02 13:41:06.253 - Configure workbench window
+> Start DBeaver SQL Model [org.jkiss.dbeaver.model.sql 1.0.110.202312122044]
+2024-01-02 13:41:06.467 - Total database drivers: 107 (107)
+> Start Help System Core [org.eclipse.help 3.10.100.v20230726-0617]
+2024-01-02 13:41:06.575 - Create actions
+2024-01-02 13:41:06.582 - Disable Eclipse action set 'org.eclipse.ui.edit.text.actionSet.annotationNavigation'
+2024-01-02 13:41:06.583 - Disable Eclipse action set 'org.eclipse.ui.WorkingSetActionSet'
+2024-01-02 13:41:06.583 - Disable Eclipse action set 'org.eclipse.ui.actionSet.openFiles'
+2024-01-02 13:41:07.100 - Initialize workbench window
+2024-01-02 13:41:07.108 - Finish initialization
+> Start Default Text Editor [org.eclipse.ui.editors 3.17.0.v20230821-1342]
+> Start Text Editor Framework [org.eclipse.ui.workbench.texteditor 3.17.100.v20230821-0745]
+> Start DBeaver UI Editors - Data [org.jkiss.dbeaver.ui.editors.data 1.0.120.202312122044]
+> Start DBeaver UI Editors - SQL [org.jkiss.dbeaver.ui.editors.sql 1.0.120.202312122044]
+> Start DBeaver SQL Terminal [org.jkiss.dbeaver.ui.editors.sql.terminal 1.0.96.202312122044]
+> Start Core Compare Support [org.eclipse.compare.core 3.8.100.v20230726-0617]
+> Start Internet Connection Management UI [org.eclipse.ui.net 1.5.100.v20230726-0617]
+> Start Internet Connection Management [org.eclipse.core.net 1.5.100.v20230630-1232]
+> Start DBeaver Sample Database [org.jkiss.dbeaver.ext.sample.database 1.0.157.202312122044]
+> Start DBeaver Tip of the day [org.jkiss.dbeaver.ext.ui.tipoftheday 1.0.126.202312122044]
+> Start GEF Classic Draw2d [org.eclipse.draw2d 3.14.0.202308311129]
+> Start GEF Classic GEF (MVC) [org.eclipse.gef 3.15.0.202308311129]
+> Start DBeaver ERD UI [org.jkiss.dbeaver.erd.ui 3.0.80.202312122044]
+> Start DBeaver ERD Model [org.jkiss.dbeaver.erd.model 1.0.80.202312122044]
+> Start Console [org.eclipse.ui.console 3.13.0.v20230726-0617]
+> Start Debug Core [org.eclipse.debug.core 3.21.100.v20230731-1425]
+2024-01-02 13:41:11.400 - Connect with 'postgres' (postgres-jdbc-18c8c78a369-638f2a6237d5840d)
+> Start DBeaver JDBC Model [org.jkiss.dbeaver.model.jdbc 1.0.13.202312122044]
+> Start DBeaver PostgreSQL Model [org.jkiss.dbeaver.ext.postgresql 2.1.193.202312122044]
+> Start DBeaver GIS Support [org.jkiss.dbeaver.data.gis 1.0.144.202312122044]
+2024-01-02 13:41:11.672 - Open [https://dbeaver.io/product/version.xml]
+2024-01-02 13:41:11.937 - Execution context opened (postgres; Main <postgres>; 0)
+2024-01-02 13:41:11.937 - Initiate connection to PostgreSQL database [postgres@localhost] for Main <postgres>
+2024-01-02 13:41:11.994 - Execution context opened (postgres; Metadata <postgres>; 1)
+2024-01-02 13:41:11.994 - Initiate connection to PostgreSQL database [postgres@localhost] for Metadata <postgres>
+2024-01-02 13:41:12.112 - Connected (postgres-jdbc-18c8c78a369-638f2a6237d5840d, PostgreSQL JDBC Driver [42.5.2])
+2024-01-02 13:41:12.181 - Execution context opened (postgres; SQLEditor <Script-1.sql>; 2)
+2024-01-02 13:41:12.182 - Initiate connection to PostgreSQL database [postgres@localhost] for SQLEditor <Script-1.sql>
+2024-01-02 13:43:16.202 - Downloading installation file to /var/folders/h9/210qhft53n7gfgj9sfvvzprc0000gn/T/dbeaver-ce-latest-macos-x86_64.dmg11543784722587236641/dbeaver-ce-latest-macos-x86_64.dmg
+2024-01-02 13:43:16.204 - Open [https://dbeaver.io/files/dbeaver-ce-latest-macos-x86_64.dmg]
+> Start DBeaver Tasks - Native Tools UI [org.jkiss.dbeaver.tasks.native.ui 1.0.98.202312122044]
+> Start DBeaver PostgreSQL UI [org.jkiss.dbeaver.ext.postgresql.ui 1.0.96.202312122044]
+> Start DBeaver Tasks - General UI [org.jkiss.dbeaver.tasks.ui 1.0.98.202312122044]
+2024-01-02 13:43:37.046 - Execution context closed (postgres, 2)
+2024-01-02 13:43:37.532 - DBeaver is stopping
+2024-01-02 13:43:37.533 - Stop instance server
+2024-01-02 13:43:38.534 - DBeaver shutdown completed
