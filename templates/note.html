@@ -1,0 +1,21 @@
+
+
+<h1>Деталі нотатки</h1>
+<form action="edit_note.php" method="post">
+    <input type="hidden" name="id" value="{{ note.id }}">
+    <label for="title">Заголовок:</label>
+    <input type="text" name="title" id="title" value="{{ note.title }}">
+    <br>
+    <label for="text">Текст:</label>
+    <textarea name="text" id="text"></textarea>
+    <br>
+    <label for="reminder">Нагадування:</label>
+    <input type="date" name="reminder" id="reminder" value="{{ note.reminder }}">
+    <br>
+    <label for="category">Категорія:</label>
+    <select name="category" id="category">
+    
+    </select>
+    <br>
+    <button type="submit">Зберегти</button>
+</form>
